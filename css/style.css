@@ -1,0 +1,326 @@
+:root{
+--main-color: #fff;
+--main-color:#e9ecef;
+--main-color:#dee2e6;
+--main-color:#ced4da;
+--main-color:white;
+
+}
+body{
+    background-color:#f1f2f3;
+}
+
+.icon{
+    width: 4rem;
+    height: 4rem;
+    font-size: 30px;
+}
+.icon-circle {
+    border: 10px solid dodgerblue;
+    height: 120px;
+    width: 120px;
+    margin: 0 auto;
+    border-radius: 50%;
+    transition: all ease 800ms;
+}
+
+
+.navbar-brand{
+    color: var(--main-color);
+    font-size: 25px;
+}
+.navbar-nav .nav-link.active{
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: 500;
+}
+.nav-link{
+    color: var(--main-color);
+    font-size: 20px;
+}
+.nav-link:hover{
+    color: var(--main-color);
+}
+
+
+
+
+
+
+/*start home*/
+.home{
+    background-image: url(./../image/hero-bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.home h1{
+    /*font-size: 4.5rem;*/
+   font-weight: 600;
+    color: var(--main-color);
+}
+
+ 
+/*end home*/
+
+
+/*start about*/
+
+
+.about h2::after{
+    content:"";
+    width: 16%;
+    height: 3px;
+    position: absolute;
+    top: 10%;
+    left:2%;
+  background-color: rgb(28, 130, 233);
+}
+.lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+ 
+
+/*start services*/
+.services_title p::after{
+    content:"";
+    width: 5%;
+    height: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 48%;
+  background-color: dodgerblue;
+    
+}
+.items{
+  padding: 25px;  
+}
+.icon-circle:hover{
+    border: 10px solid #c4def5;
+    background-color: #0d6efd;
+}
+
+/*start data*/
+#data{
+    background-image: url(./../image/counters-bg.jpg);
+   background-position: center;
+    background-attachment: fixed;
+    height: 400px;
+}
+.data-inner{
+    padding-top: 95px;
+}
+.icon-circle1{
+    border: 9px solid #ced4da;
+    height: 80px;
+    width: 80px;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.icon1{
+    width: 5rem;
+    height: 5rem;
+    font-size: 25px;
+    color: white;
+}
+/*end data */
+
+/*start portfolio*/
+
+.portfolio_title p::after{
+    content:"";
+    width: 3%;
+    height: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 48%;
+  background-color: dodgerblue;
+  transform: translateX(-50);
+}
+
+.icon2 {
+position: absolute;
+left: 85%;
+bottom: 19%;
+font-size: 25px;
+}
+.card-image{
+overflow: hidden;
+}
+.card-image:hover img{
+    transform: scale(1.5, 1.5);
+    transition:all ease 1900ms;
+}
+/*end portfoliol*/
+
+
+
+/*start slider*/
+.slider{
+    background-image: url(./../image/overlay-bg.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    height: 550px;
+   
+}
+.inner{
+    margin-top: 50px;
+    padding: 55px;
+}
+.carousel-indicators [data-bs-target]{
+    width: 2%;
+    height: 15px;
+    border-radius: 65%;
+    background-color: var(--main-color);
+}
+/*end slider*/
+
+
+/*start blog*/
+.blog-title p::after{
+    content:"";
+    width: 3%;
+    height: 5px;
+    position: absolute;
+  bottom: 0%;
+    left: 48%;
+  background-color: #0d6efd;
+  transform: translateX(-50);
+}
+.card-info img{
+   width: 25%;
+   height: 25px;
+}
+.title1{
+    position: absolute;
+ bottom: 95%;
+    left: 50%;
+  transform: translateX(-50%);
+}
+/*end blog*/
+.contact{
+    background-image: url(./../image/overlay-bg.jpg);
+    background-position: center;
+    background-attachment: fixed;
+}
+textarea{
+    resize: vertical;
+    width: 100%;
+}
+.contact-title h2::after{
+    content:"";
+    width: 20%;
+    height: 3px;
+    position: absolute;
+    top:13%;
+    left: 0.5%;
+  background-color:#0d6efd; 
+}
+.icon3{
+width: 3rem;
+font-size: 20px;
+
+}
+.icon-circle3{
+    border: 2px solid #0d6efd;
+    height: 80px;
+    width: 80px;
+    margin: 0 auto;
+    border-radius: 50%;
+    padding: 10px;
+    transition: all ease 600ms;
+}
+
+.btn:hover{
+    border: 10px solid #c4def5;
+    background-color: #0558d4;
+}
+.icon-circle3:hover{
+    border: 4px solid #c4def5;
+    background-color: #0d6efd;
+}
+
+
+.end{
+    background-color: #0558d4;
+}
+/*animation*/
+.home p::after{
+    content: "|";
+    animation:typing 2s linear 2s infinite alternate;
+}
+@keyframes typing{
+    0%{
+    content: "D|";
+      color: white;
+    }
+    10%{
+        content: "De|";
+        color: white;
+    }
+   15%{
+        content: "Des|";
+        color: white;
+    }
+    20%{
+        content: "Desg|";
+        color: white;
+    }
+    25%{
+        content: "Desgi|";
+        color: white; 
+    }
+    30%{
+        content: "Desgin|";
+        color: white;  
+    }
+    35%{
+        content: "Desgine|";
+        color: white;  
+    }
+    40%{
+        content: "Desginer|";
+        color: white;   
+    }
+}
+    /*
+    41%{
+        content: "D|";
+        color: white;  
+    }
+    42%{
+        content: "De|";
+        color: white;
+    }
+    43%{
+        content: "Dev|";
+        color: white; 
+    }
+    44%{
+        content: "Deve|";
+        color: white; 
+    }
+    45%{
+        content: "Devel|";
+        color: white; 
+    }
+    46%{
+        content: "Devlo|";
+        color: white;  
+    }
+    47%{
+        content: "Delop|";
+        color: white; 
+    }
+    48%{
+        content: "Develope|";
+        color: white;   
+    }
+    49%{
+        content: "Developer|";
+        color: white;    
+    }
+    /*
+    
